@@ -13,17 +13,276 @@ body {
   line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+input {
+  outline: transparent;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: #4e75ff;
+  font-size: 24px;
+  font-weight: 600;
+}
+a:hover,
+a:focus {
+  color: #6c8cff;
+}
+p {
+  margin-bottom: 24px;
+}
+/* task 1 start */
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+  height: 264px;
+  background-color: #f6f6fe;
+  margin-bottom: 24px;
+}
+.item > h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+.item li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+}
+.item li:last-child {
+  margin-bottom: 0;
+}
+/* task 1 end */
+
+/* task 2 start */
 .gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 48px 24px;
   list-style-type: none;
-
 }
-
 .gallery-img {
-  display: block;
-  width: 320px;
+  width: 360px;
   height: 100%;
 }
+/* task 2 end */
+
+/* task 3 start */
+#name-input {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+#name-input:hover,
+#name-input:focus {
+  border-color: #000;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+/* task 3 end */
+
+/* task 4 start */
+.login-form {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+}
+.login-form label {
+  margin-bottom: 8px;
+}
+.login-form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  background-color: transparent;
+}
+.login-form input:hover,
+.login-form input:focus {
+  border-color: #000;
+}
+.login-form input[type='password'] {
+  margin-bottom: 16px;
+}
+.login-form button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 86px;
+  height: 40px;
+  background-color: #4e75ff;
+}
+.login-form button:hover,
+.login-form button:focus {
+  background-color: #6c8cff;
+}
+/* task 4 end */
+
+/* task 5 start */
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+}
+.widget p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.change-color {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 148px;
+  height: 40px;
+  background-color: #4e75ff;
+}
+.change-color:hover,
+.change-color:focus {
+  background-color: #6c8cff;
+}
+/* task 5 end */
+
+/* task 6 start */
+#controls {
+  padding: 32px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 495px;
+  height: 104px;
+  background-color: #f6f6fe;
+
+  margin: 0 auto 16px;
+}
+#controls input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 50px;
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  margin-right: 16px;
+}
+#controls input:hover,
+#controls input:focus {
+  border-color: #000;
+}
+button[data-create] {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background-color: #4e75ff;
+  margin-right: 16px;
+}
+button[data-create]:hover,
+button[data-create]:focus {
+  background-color: #6c8cff;
+}
+button[data-destroy] {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background-color: #ff4e4e;
+}
+button[data-destroy]:hover,
+button[data-destroy]:focus {
+  background-color: #ff7070;
+}
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  padding: 32px;
+  border-radius: 8px;
+  padding: 32px;
+  width: 100%;
+  min-height: 134px;
+  background-color: #f6f6fe;
+}
+/* task 6 end */
